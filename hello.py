@@ -12,13 +12,12 @@ print(reversed_string("Emmily"))
 
 #Write a Python function that takes a list of integers as input and returns
 #  the sum of all the integers in the list.
-def culculate_total(nums):
-    total = 0
-    # list1 = [11, 5, 17, 18, 23]
+def total_num(nums):
+    sum = 0
     for i in nums:
         sum +=i
     return sum
-print(calculate_total([11, 5, 17, 18, 23]))
+print(total_num([11, 5, 17, 18, 23]))
 
 
    
@@ -26,23 +25,25 @@ print(calculate_total([11, 5, 17, 18, 23]))
 #Write a Python function that takes a list of integers as input and returns a new list
 #  with all the even numbers removed.  
 
-def remove_even_nums():
+def remove_even_nums(nums):
     answer = []
-    for i in range(100,210):
-        if i%2==0:
+    for i in nums :
+        if i%2!=0:
             answer.append(i)
-        return answer
+    return answer
+print(remove_even_nums([1,2,3,4,5]))
 
 
 #Wrte a Python function that takes a list of integers as input and returns 
 # the highest value in the list.
-def high_number():
-    x = [10,20,30,40,50]
-    print(high_number(max(x)))
+def high_number(numbers):
+    num = max(numbers)
+    return num
+print(high_number([10,20,30,40,50]))
 
 
 #Write a Python function that takes a list of strings as input and returns a new 
 # list with all the strings capitalized.  
-def capitalize_string(word):
+def capitalize_string(words):
     return[word.capitalize()for word in words]
-print(capitalize_string(["joe","yuep"]))  
+print(capitalize_string(["joe","yuep","emmie"]))  
